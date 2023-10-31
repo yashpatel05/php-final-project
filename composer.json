@@ -1,0 +1,15 @@
+{
+    "name": "yash/the-shoe-company",
+    "autoload": {
+        "psr-4": {
+            "Yash\\TheShoeCompany\\": "src/",
+            "Humber\\Models\\": "Models/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Yash"
+        }
+    ],
+    "require": {}
+}
