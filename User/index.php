@@ -500,7 +500,7 @@
                                         <span class="regular-price">CAD 85</span>
                                         <span class="old-price"><del>CAD 100</del></span>
                                     </div>
-                                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+                                    <p>Experience timeless elegance and unparalleled comfort with Primitive Men's Premium Shoes. Crafted with meticulous attention to detail and the finest materials, our collection offers a blend of sophistication and versatility for the modern man. Elevate your style effortlessly with our meticulously designed footwear.</p>
                                     <div class="quantity-cart-box d-flex align-items-center mb-20">
                                         <div class="quantity">
                                             <div class="pro-qty"><input type="text" value="1"></div>
