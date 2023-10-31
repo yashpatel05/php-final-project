@@ -16,7 +16,7 @@ This project focuses on "The Shoe Company", entailing the creation of a MySQL da
 1. Ensure you have a web server environment with PHP and MySQL installed.
 2. Set up a MySQL database and import database file **"the_shoe_company.sql"**.
 3. Clone this repository to your web server directory.
-4. Configure the database connection details in **Models/Database.php** file. **(If your database has no password, modify the Database.php file by replacing password="root" to password="".)**
+4. Configure the database connection details in **Models/Database.php** file. (If your database has no password, modify the Database.php file by **replacing password="root" to password=""**.)
    
 ## Learning Curve
 Throughout the course of this project, we acquired in-depth knowledge of proper database design principles, including naming conventions, normalization, and establishing table relationships. This project enhanced our understanding of maintaining data integrity and optimizing database performance through normalization. We also developed our skills in front-end web development, including the use of HTML, CSS, JavaScript, and jQuery, to create dynamic and responsive web pages.
