@@ -89,3 +89,81 @@
    ![image](https://github.com/2023-Fall-ITE-5330-0NA/group-project-team-404/assets/43314539/07d5370b-4978-4ca5-9dce-ab6a3da8f898)
 
    ![image](https://github.com/2023-Fall-ITE-5330-0NA/group-project-team-404/assets/43314539/b10a5df7-8e26-42ba-b900-72fd7ff4929e)
+
+9. User - Feedback
+
+   ![image](https://github.com/2023-Fall-ITE-5330-0NA/final-project-repo-team-404/assets/43314539/7d7a992c-1dc9-4aa1-8635-c1c176b674e4)
+
+   ![image](https://github.com/2023-Fall-ITE-5330-0NA/final-project-repo-team-404/assets/43314539/316be176-f0d6-40f7-8c18-9c108fe53603)
+
+10. User - My Orders
+
+    ![image](https://github.com/2023-Fall-ITE-5330-0NA/final-project-repo-team-404/assets/43314539/da044feb-de77-407f-abe7-9194e6e443f6)
+
+11. User - My Account
+
+    ![image](https://github.com/2023-Fall-ITE-5330-0NA/final-project-repo-team-404/assets/43314539/c199749d-4f1e-46bf-b8a0-9ab002a35888)
+
+    **Edit Account details**
+
+    ![image](https://github.com/2023-Fall-ITE-5330-0NA/final-project-repo-team-404/assets/43314539/d551b599-7cf9-4120-98c2-a787df58cb80)
+
+    **Change Password**
+
+    ![image](https://github.com/2023-Fall-ITE-5330-0NA/final-project-repo-team-404/assets/43314539/4e3d0c1e-2346-45f2-a1af-12e818e79d5b)
+
+12. Admin - User
+
+    ![image](https://github.com/2023-Fall-ITE-5330-0NA/final-project-repo-team-404/assets/43314539/e02a6bb2-822b-4a46-8b33-e85ca98e949e)
+
+13. Admin - Category
+
+    ![image](https://github.com/2023-Fall-ITE-5330-0NA/final-project-repo-team-404/assets/43314539/b465bf10-2d1b-4ecc-88ed-eeffe145afdf)
+
+    **Add a new category**
+
+    ![image](https://github.com/2023-Fall-ITE-5330-0NA/final-project-repo-team-404/assets/43314539/9874ad6b-d145-466a-9a69-9e78e6fac57e)
+
+    ![image](https://github.com/2023-Fall-ITE-5330-0NA/final-project-repo-team-404/assets/43314539/f2afe02f-b78d-4007-94a5-630fd4f99539)
+
+    ![image](https://github.com/2023-Fall-ITE-5330-0NA/final-project-repo-team-404/assets/43314539/326d7147-7779-4864-843c-4c38f342da58)
+
+    **Edit a category**
+
+    ![image](https://github.com/2023-Fall-ITE-5330-0NA/final-project-repo-team-404/assets/43314539/3835120d-9f9d-486b-8244-0beb28cf3b74)
+
+    ![image](https://github.com/2023-Fall-ITE-5330-0NA/final-project-repo-team-404/assets/43314539/96cedd8e-f222-4737-9dbc-080645e4250d)
+
+    ![image](https://github.com/2023-Fall-ITE-5330-0NA/final-project-repo-team-404/assets/43314539/a96ce534-18a9-4528-9c00-99228feda6ad)
+
+    **Delete a category**
+
+    ![image](https://github.com/2023-Fall-ITE-5330-0NA/final-project-repo-team-404/assets/43314539/ade299a5-235e-4f11-942f-f390af58a67b)
+
+    ![image](https://github.com/2023-Fall-ITE-5330-0NA/final-project-repo-team-404/assets/43314539/cff473c0-c93c-4dd7-b5d4-8e4ac629ae4f)
+
+14. Admin - Sub-Category with Add, Edit and Delete
+
+    ![image](https://github.com/2023-Fall-ITE-5330-0NA/final-project-repo-team-404/assets/43314539/006add78-bafb-4537-bfd8-3510335e5a37)
+
+15. Admin - Product with Add, Edit and Delete
+
+    ![image](https://github.com/2023-Fall-ITE-5330-0NA/final-project-repo-team-404/assets/43314539/a8fb28b1-4ec5-4c8b-b9e0-6dea404c916b)
+
+16. Admin - Brand with Add, Edit and Delete
+
+    ![image](https://github.com/2023-Fall-ITE-5330-0NA/final-project-repo-team-404/assets/43314539/9b2986c3-822c-42e3-b5cd-e6088160a4a7
+
+17. Admin - Feedback
+
+    ![image](https://github.com/2023-Fall-ITE-5330-0NA/final-project-repo-team-404/assets/43314539/c734f826-f866-497e-bf79-e5569fa0eeec)
+
+18. Admin - Contacts
+
+    ![image](https://github.com/2023-Fall-ITE-5330-0NA/final-project-repo-team-404/assets/43314539/c56f9250-d3d6-49f5-98f6-bb7ca1fb173c)
+
+    **When Problem Solved**
+
+    ![image](https://github.com/2023-Fall-ITE-5330-0NA/final-project-repo-team-404/assets/43314539/1198e270-a6ef-4844-a417-6d4782d17219)
+
+    ![image](https://github.com/2023-Fall-ITE-5330-0NA/final-project-repo-team-404/assets/43314539/6675901d-f0d9-4699-a0f2-3e697fe0a972)
