@@ -1,20 +1,31 @@
 @extends('layouts.app')
 
-@section('title', 'About US')
+@section('title', 'My Orders')
 
 @section('content')
 
+
+<!-- off-canvas menu start -->
+<!-- user setting option end -->
+
+<!-- offcanvas widget area start -->
+
+
+<!-- off-canvas menu end -->
+
+<!-- main wrapper start -->
 <main>
-    <div class="breadcrumb-area bg-img" data-bg="{{ asset('assets/img/banner/breadcrumb-banner.jpg') }}">
+    <!-- breadcrumb area start -->
+    <div class="breadcrumb-area bg-img" data-bg="assets/img/banner/breadcrumb-banner.jpg">
         <div class="container">
             <div class="row">
                 <div class="col-12">
                     <div class="breadcrumb-wrap text-center">
                         <nav aria-label="breadcrumb">
-                            <h1 class="breadcrumb-title">About Us</h1>
+                            <h1 class="breadcrumb-title">My Orders</h1>
                             <ul class="breadcrumb">
                                 <li class="breadcrumb-item"><a href="{{ route('home') }}">Home</a></li>
-                                <li class="breadcrumb-item"><a href="{{ route('aboutus') }}">About Us</a></li>
+                                <li class="breadcrumb-item active" aria-current="page"><a href="{{ route('myorder') }}">My Orders</a></li>
                             </ul>
                         </nav>
                     </div>
@@ -22,71 +33,53 @@
             </div>
         </div>
     </div>
+    <!-- breadcrumb area end -->
 
-    <div class="blog-main-wrapper section-padding">
+    <!-- cart main wrapper start -->
+    <div class="cart-main-wrapper section-padding">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-3 order-2">
-                    <div class="blog-widget-wrapper">
-                        <!-- widget item start -->
+            <div class="section-bg-color">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <!-- Cart Table Area -->
+                        <div class="cart-table table-responsive">
+                            <table class="table table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th class="pro-thumbnail">Thumbnail</th>
+                                        <th class="pro-title">Product</th>
+                                        <th class="pro-price">Price</th>
+                                        <th class="pro-quantity">Quantity</th>
+                                        <th class="pro-subtotal">Total</th>
 
-                        <!-- widget item end -->
+                                    </tr>
+                                </thead>
+                                <tbody>
 
+                                    @foreach($order_details as $order_detail)
+                                    <tr>
+                                        <td class="pro-thumbnail">
+                                            <a href=""><img src="{{ asset('assets/img/product/' . $order_detail->product->image) }}" alt="Product"></a>
+                                        </td>
+                                        <td class="pro-title"><a href="#">{{ $order_detail->product->name }}</a></td>
+                                        <td class="pro-price"><span>CAD {{ $order_detail->product->price }}</span></td>
+                                        <td>
+                                            <input type="text" class="form-control text-center" value="{{ $order_detail->quantity }}">
+                                        </td>
+                                        <td class="pro-price"><span>CAD {{ $order_detail->total_amount }}</span></td>
+                                        <!--<td class="pro-subtotal"><span></span></td>-->
+                                    </tr>
+                                    @endforeach
 
-
-                    </div>
-                </div>
-                <div class="col-lg-12 order-1">
-                    <div class="row">
-                        <div class="col-12">
-                            <div class="blog-post-item">
-                                <div class="blog-thumb">
-                                    <img src="{{ asset('assets/img/blog/blog-details-1.jpg') }}" alt="blog thumb">
-                                </div>
-                                <div class="blog-content blog-details">
-                                    <h5 class="blog-title">
-                                        Welcome to The Shoe Company - Your Ultimate Destination for Stylish Footwear
-                                    </h5>
-                                    <ul class="blog-meta">
-                                        <li><span>By: </span>Team 404,</li>
-                                        <li><span>On: </span>{{ \Carbon\Carbon::now()->format('d.m.Y') }}</li>
-                                    </ul>
-                                    <p>
-                                        At The Shoe Company, we're passionate about providing you with the latest and trendiest footwear
-                                        options. Our goal is to offer a seamless online shopping experience, combining style, comfort,
-                                        and quality in every step you take.
-                                    </p>
-                                    <blockquote>
-                                        <p>
-                                            Shoes aren't just a necessity; they are a statement of style. Whether you're looking for
-                                            casual sneakers, elegant heels, or durable sports shoes, we have a wide range to suit every
-                                            occasion and preference.
-                                        </p>
-                                    </blockquote>
-                                    <p>
-                                        Our journey began with the vision to create a platform where shoe enthusiasts can explore a
-                                        diverse collection, from timeless classics to the latest fashion-forward designs. We understand
-                                        that shoes play a crucial role in expressing your personality, and that's why we curate a selection
-                                        that caters to various tastes and preferences.
-                                    </p>
-                                    <p>
-                                        Step into the world of The Shoe Company and discover footwear that not only complements your
-                                        style but also enhances your confidence. Whether you're stepping into the office, hitting the gym,
-                                        or attending a special event, we have the perfect pair for you.
-                                    </p>
-                                </div>
-
-                            </div>
+                                </tbody>
+                            </table>
                         </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- blog main wrapper end -->
+                        <!-- Cart Update Option -->
+
+
+                        <!-- cart main wrapper end -->
 </main>
 <!-- main wrapper end -->
-
 
 <!-- offcanvas search form start -->
 <div class="offcanvas-search-wrapper">
@@ -118,7 +111,7 @@
                 <div class="minicart-item-wrapper">
                     <ul>
                         <li class="minicart-item">
-                            <!-- <div class="minicart-thumb">
+                            <div class="minicart-thumb">
                                 <a href="product-details.html">
                                     <img src="assets/img/cart/cart-1.jpg" alt="product">
                                 </a>
@@ -132,10 +125,10 @@
                                     <span class="cart-price">$100.00</span>
                                 </p>
                             </div>
-                            <button class="minicart-remove"><i class="ion-android-close"></i></button> -->
+                            <button class="minicart-remove"><i class="ion-android-close"></i></button>
                         </li>
                         <li class="minicart-item">
-                            <!-- <div class="minicart-thumb">
+                            <div class="minicart-thumb">
                                 <a href="product-details.html">
                                     <img src="assets/img/cart/cart-2.jpg" alt="product">
                                 </a>
@@ -149,14 +142,14 @@
                                     <span class="cart-price">$80.00</span>
                                 </p>
                             </div>
-                            <button class="minicart-remove"><i class="ion-android-close"></i></button>-->
+                            <button class="minicart-remove"><i class="ion-android-close"></i></button>
                         </li>
                     </ul>
                 </div>
 
                 <div class="minicart-pricing-box">
                     <ul>
-                        <!-- <li>
+                        <li>
                             <span>sub-total</span>
                             <span><strong>$300.00</strong></span>
                         </li>
@@ -171,7 +164,7 @@
                         <li class="total">
                             <span>total</span>
                             <span><strong>$370.00</strong></span>
-                        </li> -->
+                        </li>
                     </ul>
                 </div>
 
