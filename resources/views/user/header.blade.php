@@ -31,7 +31,7 @@
                             <!-- main menu navbar start -->
                             <nav class="desktop-menu">
                                 <ul>
-                                    <li class="active"><a href="{{ url('home') }}">Home</a></li>
+                                    <li class="active"><a href="{{ route('home') }}">Home</a></li>
                                     <li class="static"><a href="#">Category <i class="fa fa-angle-down"></i></a>
                                         <ul class="megamenu dropdown">
                                             @foreach($categories as $category)
@@ -46,10 +46,10 @@
                                             @endforeach
                                         </ul>
                                     </li>
-                                    <li><a href="#">Feedback</a></li>
+                                    <li><a href="{{ route('feedback') }}">Feedback</a></li>
                                     <li><a href="{{ route('contactus') }}">Contact us</a></li>
                                     @if (session()->has('user_id'))
-                                    <li><a href="#">My order</a></li>
+                                    <li><a href="{{ route('myorder') }}">My order</a></li>
                                     @endif
                                     <li><a href="{{ route('aboutus') }}">About Us</a></li>
                                 </ul>
@@ -78,7 +78,7 @@
                                     <ul class="dropdown-list">
                                         @if (session()->has('user_id'))
                                         <!-- Code for authenticated user -->
-                                        <li><a href="#">My account</a></li>
+                                        <li><a href="{{ route('myaccount') }}">My account</a></li>
                                         <li><a href="{{ route('logout') }}">Logout</a></li>
                                         @else
                                         <!-- Code for non-authenticated user -->

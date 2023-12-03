@@ -16,7 +16,7 @@ class Product extends Model
         'name',
         'description',
         'price',
-        'qunatity',
+        'quantity',
         'image',
         'size',
         'colour',
@@ -26,11 +26,22 @@ class Product extends Model
 
     public function subcategory()
     {
-        return $this->belongsTo(Subcategory::class);
+        return $this->belongsTo(Subcategory::class, 'sub_category_id', 'id');
+    }
+
+    public function brand()
+    {
+        return $this->belongsTo(Brand::class, 'brand_id', 'id');
     }
 
     public function feedbacks()
     {
-        return $this->hasMany(Feedback::class);
+        return $this->hasMany(Feedback::class, 'feedback_id', 'id');
+    }
+
+    // Define the relationship with the Orderdetails model
+    public function orderDetails()
+    {
+        return $this->hasMany(Orderdetails::class, 'product_id', 'id');
     }
 }

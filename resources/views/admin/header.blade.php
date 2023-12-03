@@ -1,6 +1,6 @@
 @php
-// Retrieve the authenticated user
-$user = $user ?? $this->getAuthenticatedUser();
+// Retrieve the authenticated user using the session
+$user = App\Models\User::find(session('user_id'));
 @endphp
 <div class="loader"></div>
 <div id="app">
@@ -48,35 +48,23 @@ $user = $user ?? $this->getAuthenticatedUser();
           </li>
 
           <li>
-            <a href="#" class="nav-link"><i data-feather="grid"></i><span>User</span></a>
+            <a href="{{ route('admin.user') }}" class="nav-link"><i data-feather="grid"></i><span>User</span></a>
           </li>
 
           <li>
-            <a href="#" class="nav-link"><i data-feather="grid"></i><span>Area</span></a>
+            <a href="{{ route('admin.category') }}" class="nav-link"><i data-feather="grid"></i><span>Category</span></a>
           </li>
 
           <li>
-            <a href="#" class="nav-link"><i data-feather="grid"></i><span>Category</span></a>
+            <a href="{{ route('admin.subcategory') }}" class="nav-link"><i data-feather="grid"></i><span>Sub-category</span></a>
           </li>
 
           <li>
-            <a href="#" class="nav-link"><i data-feather="grid"></i><span>Sub-category</span></a>
+            <a href="{{ route('admin.product') }}" class="nav-link"><i data-feather="grid"></i><span>Product</span></a>
           </li>
 
           <li>
-            <a href="#" class="nav-link"><i data-feather="grid"></i><span>Product</span></a>
-          </li>
-
-          <li>
-            <a href="#" class="nav-link"><i data-feather="grid"></i><span>Gallery</span></a>
-          </li>
-
-          <li>
-            <a href="#" class="nav-link"><i data-feather="grid"></i><span>Brand</span></a>
-          </li>
-
-          <li>
-            <a href="#" class="nav-link"><i data-feather="grid"></i><span>Wishlist</span></a>
+            <a href="{{ route('admin.brand') }}" class="nav-link"><i data-feather="grid"></i><span>Brand</span></a>
           </li>
 
           <li>
@@ -88,11 +76,11 @@ $user = $user ?? $this->getAuthenticatedUser();
           </li>
 
           <li>
-            <a href="#" class="nav-link"><i data-feather="grid"></i><span>Feedback</span></a>
+            <a href="{{ route('admin.feedback') }}" class="nav-link"><i data-feather="grid"></i><span>Feedback</span></a>
           </li>
 
           <li>
-            <a href="#" class="nav-link"><i data-feather="grid"></i><span>Contact</span></a>
+            <a href="{{ route('admin.contact') }}" class="nav-link"><i data-feather="grid"></i><span>Contact</span></a>
           </li>
 
           <li class="dropdown">
