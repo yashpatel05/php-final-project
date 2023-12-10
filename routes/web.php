@@ -12,7 +12,6 @@ use App\Http\Controllers\Admin\ProductsController;
 use App\Http\Controllers\Admin\BrandsController;
 use App\Http\Controllers\Admin\FeedbacksController;
 use App\Http\Controllers\Admin\ContactsController;
-use App\Http\Controllers\CartController;
 use App\Http\Controllers\LogoutController;
 use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\ContactUsController;
@@ -20,8 +19,8 @@ use App\Http\Controllers\AboutUsController;
 use App\Http\Controllers\FeedbackController;
 use App\Http\Controllers\MyOrdersController;
 use App\Http\Controllers\MyAccountController;
+use App\Http\Controllers\CartController;
 use App\Http\Controllers\CheckoutController;
-
 
 /*
 |--------------------------------------------------------------------------

@@ -17,6 +17,7 @@ class Product extends Model
         'description',
         'price',
         'quantity',
+        'quantity',
         'image',
         'size',
         'colour',
@@ -39,10 +40,10 @@ class Product extends Model
         return $this->hasMany(Feedback::class, 'product_id', 'id');
     }
 
-    // Define the relationship with the Orderdetails model
+    // Define the relationship with the OrderDetail model
     public function orderDetails()
     {
-        return $this->hasMany(Orderdetails::class, 'product_id', 'id');
+        return $this->hasMany(OrderDetail::class, 'product_id', 'id');
     }
 
     public function carts()
