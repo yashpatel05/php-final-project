@@ -16,11 +16,11 @@
 </head>
 
 <body>
-    @if(session()->has('success') && !empty(session('success')))
+    @if(session()->has('error') && !empty(session('error')))
     <script>
         // JavaScript for displaying the alert
         window.onload = function() {
-            alert("{{ session('success') }}");
+            alert("{{ session('error') }}");
         };
     </script>
     @endif

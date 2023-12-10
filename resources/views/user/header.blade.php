@@ -88,11 +88,8 @@
                                     </ul>
                                 </li>
                                 <li>
-                                    <a href="#" class="minicart-btn">
+                                    <a href="{{ route('cart') }}" class="minicart-btn">
                                         <i class="ion-bag"></i>
-                                        <div class="notification">
-                                            {{-- <?php echo $cart_count; ?> --}}
-                                        </div>
                                     </a>
                                 </li>
                             </ul>

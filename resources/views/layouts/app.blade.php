@@ -16,6 +16,7 @@
     <link href="{{ asset('assets/css/style.css') }}" rel="stylesheet">
     <!-- Modernizer JS -->
     <script src="{{ asset('assets/js/modernizr-2.8.3.min.js') }}"></script>
+    <script src="{{ asset('assets/js/jquery-3.6.4.min.js') }}"></script>
 </head>
 
 <body>

@@ -5,17 +5,18 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Feedback extends Model
+class Cart extends Model
 {
     use HasFactory;
-    protected $table = 'feedbacks';
+    protected $table = 'carts';
     protected $primaryKey = 'id';
     public $timestamps = true;
 
     protected $fillable = [
-        'feedback',
         'user_id',
-        'product_id'
+        'product_id',
+        'quantity',
+        'price'
     ];
 
     public function user()

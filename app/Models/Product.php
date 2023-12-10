@@ -36,12 +36,17 @@ class Product extends Model
 
     public function feedbacks()
     {
-        return $this->hasMany(Feedback::class, 'feedback_id', 'id');
+        return $this->hasMany(Feedback::class, 'product_id', 'id');
     }
 
     // Define the relationship with the Orderdetails model
     public function orderDetails()
     {
         return $this->hasMany(Orderdetails::class, 'product_id', 'id');
+    }
+
+    public function carts()
+    {
+        return $this->hasMany(Cart::class, 'product_id', 'id');
     }
 }

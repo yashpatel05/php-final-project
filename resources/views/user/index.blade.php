@@ -100,27 +100,29 @@
                         @foreach($products as $product)
                         <div class="product-item mb-50">
                             <div class="product-thumb">
-                                <a href="#product details.php">
-                                    <a href="#{{ url('product-details?id=$product->id') }}">
-                                        <img height="200" src="{{ asset('assets/img/product/' . $product->image) }}" alt="">
-                                    </a>
-                                    <div class="product-content">
-                                        <h5 class="product-name">
-                                            <a href="{{ url('product-details?id=$product->id') }}">{{ $product->name }}</a>
-                                        </h5>
-                                        <div class="price-box">
-                                            <span class="price-regular">CAD {{ $product->price }}</span>
+                                <a href="{{ url('product-details?id=' . $product->id) }}">
+                                    <img height="200" src="{{ asset('assets/img/product/' . $product->image) }}" alt="">
+                                </a>
+                                <div class="product-content">
+                                    <h5 class="product-name">{{ $product->name }}</h5>
+                                    <div class="price-box mb-1">
+                                        <span class="price-regular">CAD {{ $product->price }}</span>
+                                    </div>
+                                    <form action="{{ route('cart.store') }}" method="post">
+                                        @csrf
+                                        <input type="hidden" name="product_id" value="{{ $product->id }}">
+                                        <input type="hidden" name="product_price" value="{{ $product->price }}">
+                                        <div class="quantity-input mb-2">
+                                            <label for="quantity">Qty:</label>
+                                            <input type="number" name="quantity" value="1" min="1" style="width: 40px;">
                                         </div>
-                                    </div>
-
-                                    <div class="product-action-link">
-                                        <a href="#" data-toggle="tooltip" title="Wishlist"><i class="ion-android-favorite-outline"></i></a>
-                                        <a href="#" data-toggle="tooltip" title="Add To Cart"><i class="ion-bag"></i></a>
-                                        <a href="#" data-toggle="modal" data-target="#quick_view"> <span data-toggle="tooltip" title="Quick View"><i class="ion-ios-eye-outline"></i></span> </a>
-                                    </div>
+                                        <button type="submit" class="btn btn-primary">Add To Cart</button>
+                                    </form>
+                                </div>
                             </div>
                         </div>
                         @endforeach
+
                         <!-- product single item start -->
 
 
@@ -208,11 +210,6 @@
                                         <span><i class="ion-android-star"></i></span>
                                         <span><i class="ion-android-star"></i></span>
                                     </div>
-                                    <div class="product-link-2">
-                                        <a href="#" data-toggle="tooltip" title="Wishlist"><i class="ion-android-favorite-outline"></i></a>
-                                        <a href="#" data-toggle="tooltip" title="Add To Cart"><i class="ion-bag"></i></a>
-                                        <a href="#" data-toggle="modal" data-target="#quick_view"> <span data-toggle="tooltip" title="Quick View"><i class="ion-ios-eye-outline"></i></span> </a>
-                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -240,11 +237,6 @@
                                         <span><i class="ion-android-star"></i></span>
                                         <span><i class="ion-android-star"></i></span>
                                         <span><i class="ion-android-star"></i></span>
-                                    </div>
-                                    <div class="product-link-2">
-                                        <a href="#" data-toggle="tooltip" title="Wishlist"><i class="ion-android-favorite-outline"></i></a>
-                                        <a href="#" data-toggle="tooltip" title="Add To Cart"><i class="ion-bag"></i></a>
-                                        <a href="#" data-toggle="modal" data-target="#quick_view"> <span data-toggle="tooltip" title="Quick View"><i class="ion-ios-eye-outline"></i></span> </a>
                                     </div>
                                 </div>
                             </div>
@@ -274,11 +266,6 @@
                                         <span><i class="ion-android-star"></i></span>
                                         <span><i class="ion-android-star"></i></span>
                                     </div>
-                                    <div class="product-link-2">
-                                        <a href="#" data-toggle="tooltip" title="Wishlist"><i class="ion-android-favorite-outline"></i></a>
-                                        <a href="#" data-toggle="tooltip" title="Add To Cart"><i class="ion-bag"></i></a>
-                                        <a href="#" data-toggle="modal" data-target="#quick_view"> <span data-toggle="tooltip" title="Quick View"><i class="ion-ios-eye-outline"></i></span> </a>
-                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -306,11 +293,6 @@
                                         <span><i class="ion-android-star"></i></span>
                                         <span><i class="ion-android-star"></i></span>
                                         <span><i class="ion-android-star"></i></span>
-                                    </div>
-                                    <div class="product-link-2">
-                                        <a href="#" data-toggle="tooltip" title="Wishlist"><i class="ion-android-favorite-outline"></i></a>
-                                        <a href="#" data-toggle="tooltip" title="Add To Cart"><i class="ion-bag"></i></a>
-                                        <a href="#" data-toggle="modal" data-target="#quick_view"> <span data-toggle="tooltip" title="Quick View"><i class="ion-ios-eye-outline"></i></span> </a>
                                     </div>
                                 </div>
                             </div>
@@ -340,11 +322,6 @@
                                         <span><i class="ion-android-star"></i></span>
                                         <span><i class="ion-android-star"></i></span>
                                     </div>
-                                    <div class="product-link-2">
-                                        <a href="#" data-toggle="tooltip" title="Wishlist"><i class="ion-android-favorite-outline"></i></a>
-                                        <a href="#" data-toggle="tooltip" title="Add To Cart"><i class="ion-bag"></i></a>
-                                        <a href="#" data-toggle="modal" data-target="#quick_view"> <span data-toggle="tooltip" title="Quick View"><i class="ion-ios-eye-outline"></i></span> </a>
-                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -372,11 +349,6 @@
                                         <span><i class="ion-android-star"></i></span>
                                         <span><i class="ion-android-star"></i></span>
                                         <span><i class="ion-android-star"></i></span>
-                                    </div>
-                                    <div class="product-link-2">
-                                        <a href="#" data-toggle="tooltip" title="Wishlist"><i class="ion-android-favorite-outline"></i></a>
-                                        <a href="#" data-toggle="tooltip" title="Add To Cart"><i class="ion-bag"></i></a>
-                                        <a href="#" data-toggle="modal" data-target="#quick_view"> <span data-toggle="tooltip" title="Quick View"><i class="ion-ios-eye-outline"></i></span> </a>
                                     </div>
                                 </div>
                             </div>
@@ -442,76 +414,4 @@
     <!-- service features end -->
 </main>
 <!-- main wrapper end -->
-
-<!-- Quick view modal start -->
-<div class="modal" id="quick_view">
-    <div class="modal-dialog modal-lg modal-dialog-centered">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal">&times;</button>
-            </div>
-            <div class="modal-body">
-                <!-- product details inner end -->
-                <div class="product-details-inner">
-                    <div class="row">
-                        <div class="col-lg-5">
-                            <div class="product-large-slider mb-20">
-                                <div class="pro-large-img img-zoom">
-                                    <img src="assets/img/product/product-details-img1.jpg" alt="product thumb" />
-                                </div>
-                                <div class="pro-large-img img-zoom">
-                                    <img src="assets/img/product/product-details-img2.jpg" alt="product thumb" />
-                                </div>
-                                <div class="pro-large-img img-zoom">
-                                    <img src="assets/img/product/product-details-img3.jpg" alt="product thumb" />
-                                </div>
-                                <div class="pro-large-img img-zoom">
-                                    <img src="assets/img/product/product-details-img4.jpg" alt="product thumb" />
-                                </div>
-                            </div>
-                            <div class="pro-nav slick-row-5">
-                                <div class="pro-nav-thumb"><img src="assets/img/product/product-details-img1.jpg" alt="" /></div>
-                                <div class="pro-nav-thumb"><img src="assets/img/product/product-details-img2.jpg" alt="" /></div>
-                                <div class="pro-nav-thumb"><img src="assets/img/product/product-details-img3.jpg" alt="" /></div>
-                                <div class="pro-nav-thumb"><img src="assets/img/product/product-details-img4.jpg" alt="" /></div>
-                            </div>
-                        </div>
-                        <div class="col-lg-7">
-                            <div class="product-details-des">
-                                <h3 class="pro-det-title">Primitive Mens Premium Shoes</h3>
-                                <div class="pro-review">
-                                    <span><a href="#">1 Review(s)</a></span>
-                                </div>
-                                <div class="price-box">
-                                    <span class="regular-price">CAD 85</span>
-                                    <span class="old-price"><del>CAD 100</del></span>
-                                </div>
-                                <p>Primitive Men's Premium Shoes redefine style and comfort with meticulous craftsmanship and premium materials. Elevate your look with a perfect blend of sophistication and modern design, ensuring both fashion-forward appeal and lasting comfort.</p>
-                                <div class="quantity-cart-box d-flex align-items-center mb-20">
-                                    <div class="quantity">
-                                        <div class="pro-qty"><input type="text" value="1"></div>
-                                    </div>
-                                    <a href="#cart.html" class="btn btn-default">Add To Cart</a>
-                                </div>
-                                <div class="availability mb-20">
-                                    <h5 class="cat-title">Availability:</h5>
-                                    <span>In Stock</span>
-                                </div>
-                                <div class="share-icon">
-                                    <h5 class="cat-title">Share:</h5>
-                                    <a href="#"><i class="fa fa-facebook"></i></a>
-                                    <a href="#"><i class="fa fa-twitter"></i></a>
-                                    <a href="#"><i class="fa fa-pinterest"></i></a>
-                                    <a href="#"><i class="fa fa-google-plus"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- product details inner end -->
-            </div>
-        </div>
-    </div>
-</div>
-<!-- Quick view modal end -->
 @endsection

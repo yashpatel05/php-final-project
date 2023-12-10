@@ -3,7 +3,14 @@
 @section('title', 'Feedback')
 
 @section('content')
-
+@if(session()->has('success') && !empty(session('success')))
+<script>
+    // JavaScript for displaying the alert
+    window.onload = function() {
+        alert("{{ session('success') }}");
+    };
+</script>
+@endif
 <!-- off-canvas menu start -->
 <aside class="off-canvas-wrapper">
     <div class="off-canvas-overlay"></div>
@@ -33,35 +40,35 @@
                             <ul class="megamenu dropdown">
                                 <li class="mega-title menu-item-has-children"><a href="#">column 01</a>
                                     <ul class="dropdown">
-                                        <li><a href="shop.html">shop grid left
+                                        <li><a href="#shop.html">shop grid left
                                                 sidebar</a></li>
-                                        <li><a href="shop-grid-right-sidebar.html">shop grid right
+                                        <li><a href="#shop-grid-right-sidebar.html">shop grid right
                                                 sidebar</a></li>
-                                        <li><a href="shop-list-left-sidebar.html">shop list left sidebar</a></li>
-                                        <li><a href="shop-list-right-sidebar.html">shop list right sidebar</a></li>
+                                        <li><a href="#shop-list-left-sidebar.html">shop list left sidebar</a></li>
+                                        <li><a href="#shop-list-right-sidebar.html">shop list right sidebar</a></li>
                                     </ul>
                                 </li>
                                 <li class="mega-title menu-item-has-children"><a href="#">column 02</a>
                                     <ul class="dropdown">
-                                        <li><a href="product-details.html">product details</a></li>
-                                        <li><a href="product-details-affiliate.html">product details affiliate</a></li>
-                                        <li><a href="product-details-variable.html">product details variable</a></li>
-                                        <li><a href="product-details-group.html">product details group</a></li>
+                                        <li><a href="#product-details.html">product details</a></li>
+                                        <li><a href="#product-details-affiliate.html">product details affiliate</a></li>
+                                        <li><a href="#product-details-variable.html">product details variable</a></li>
+                                        <li><a href="#product-details-group.html">product details group</a></li>
                                     </ul>
                                 </li>
                                 <li class="mega-title menu-item-has-children"><a href="#">column 03</a>
                                     <ul class="dropdown">
-                                        <li><a href="cart.html">cart</a></li>
-                                        <li><a href="checkout.html">checkout</a></li>
-                                        <li><a href="compare.html">compare</a></li>
-                                        <li><a href="wishlist.html">wishlist</a></li>
+                                        <li><a href="#cart.html">cart</a></li>
+                                        <li><a href="#checkout.html">checkout</a></li>
+                                        <li><a href="#compare.html">compare</a></li>
+                                        <li><a href="#wishlist.html">wishlist</a></li>
                                     </ul>
                                 </li>
                                 <li class="mega-title menu-item-has-children"><a href="#">column 04</a>
                                     <ul class="dropdown">
-                                        <li><a href="my-account.html">my-account</a></li>
-                                        <li><a href="login-register.html">login-register</a></li>
-                                        <li><a href="contact-us.html">contact us</a></li>
+                                        <li><a href="#my-account.html">my-account</a></li>
+                                        <li><a href="#login-register.html">login-register</a></li>
+                                        <li><a href="#contact-us.html">contact us</a></li>
                                     </ul>
                                 </li>
                             </ul>
@@ -70,41 +77,41 @@
                             <ul class="dropdown">
                                 <li class="menu-item-has-children"><a href="#">shop grid layout</a>
                                     <ul class="dropdown">
-                                        <li><a href="shop.html">shop grid left sidebar</a></li>
-                                        <li><a href="shop-grid-right-sidebar.html">shop grid right sidebar</a></li>
-                                        <li><a href="shop-grid-full-3-col.html">shop grid full 3 col</a></li>
-                                        <li><a href="shop-grid-full-4-col.html">shop grid full 4 col</a></li>
+                                        <li><a href="#shop.html">shop grid left sidebar</a></li>
+                                        <li><a href="#shop-grid-right-sidebar.html">shop grid right sidebar</a></li>
+                                        <li><a href="#shop-grid-full-3-col.html">shop grid full 3 col</a></li>
+                                        <li><a href="#shop-grid-full-4-col.html">shop grid full 4 col</a></li>
                                     </ul>
                                 </li>
                                 <li class="menu-item-has-children"><a href="#">shop list layout</a>
                                     <ul class="dropdown">
-                                        <li><a href="shop-list-left-sidebar.html">shop list left sidebar</a></li>
-                                        <li><a href="shop-list-right-sidebar.html">shop list right sidebar</a></li>
-                                        <li><a href="shop-list-full-width.html">shop list full width</a></li>
+                                        <li><a href="#shop-list-left-sidebar.html">shop list left sidebar</a></li>
+                                        <li><a href="#shop-list-right-sidebar.html">shop list right sidebar</a></li>
+                                        <li><a href="#shop-list-full-width.html">shop list full width</a></li>
                                     </ul>
                                 </li>
                                 <li class="menu-item-has-children"><a href="#">products details</a>
                                     <ul class="dropdown">
-                                        <li><a href="product-details.html">product details</a></li>
-                                        <li><a href="product-details-affiliate.html">product details affiliate</a></li>
-                                        <li><a href="product-details-variable.html">product details variable</a></li>
-                                        <li><a href="product-details-group.html">product details group</a></li>
+                                        <li><a href="#product-details.html">product details</a></li>
+                                        <li><a href="#product-details-affiliate.html">product details affiliate</a></li>
+                                        <li><a href="#product-details-variable.html">product details variable</a></li>
+                                        <li><a href="#product-details-group.html">product details group</a></li>
                                     </ul>
                                 </li>
                             </ul>
                         </li>
                         <li class="menu-item-has-children "><a href="#">Blog</a>
                             <ul class="dropdown">
-                                <li><a href="blog-left-sidebar.html">blog left sidebar</a></li>
-                                <li><a href="blog-right-sidebar.html">blog right sidebar</a></li>
-                                <li><a href="blog-grid-full-width.html">blog grid no sidebar</a></li>
-                                <li><a href="blog-details.html">blog details</a></li>
-                                <li><a href="blog-details-audio.html">blog details audio</a></li>
-                                <li><a href="blog-details-video.html">blog details video</a></li>
-                                <li><a href="blog-details-left-sidebar.html">blog details left sidebar</a></li>
+                                <li><a href="#blog-left-sidebar.html">blog left sidebar</a></li>
+                                <li><a href="#blog-right-sidebar.html">blog right sidebar</a></li>
+                                <li><a href="#blog-grid-full-width.html">blog grid no sidebar</a></li>
+                                <li><a href="#blog-details.html">blog details</a></li>
+                                <li><a href="#blog-details-audio.html">blog details audio</a></li>
+                                <li><a href="#blog-details-video.html">blog details video</a></li>
+                                <li><a href="#blog-details-left-sidebar.html">blog details left sidebar</a></li>
                             </ul>
                         </li>
-                        <li><a href="contact-us.html">Contact us</a></li>
+                        <li><a href="#contact-us.html">Contact us</a></li>
                     </ul>
                 </nav>
                 <!-- mobile menu navigation end -->
@@ -132,9 +139,9 @@
                                 <i class="fa fa-angle-down"></i>
                             </a>
                             <div class="dropdown-menu" aria-labelledby="myaccount">
-                                <a class="dropdown-item" href="my-account.html">my account</a>
-                                <a class="dropdown-item" href="{{ url('/login') }}"> login</a>
-                                <a class="dropdown-item" href="{{ url('/register') }}">register</a>
+                                <a class="dropdown-item" href="{{ route('myaccount') }}">my account</a>
+                                <a class="dropdown-item" href="{{ route('login') }}"> login</a>
+                                <a class="dropdown-item" href="{{ route('register') }}">register</a>
                             </div>
                         </div>
                     </li>
@@ -179,8 +186,8 @@
                         <nav aria-label="breadcrumb">
                             <h1 class="breadcrumb-title">Feedback</h1>
                             <ul class="breadcrumb">
-                                <li class="breadcrumb-item"><a href="{{ url('home') }}">Home</a></li>
-                                <li class="breadcrumb-item active" aria-current="page"><a href="{{ url('user.feedback') }}">Feedback</li>
+                                <li class="breadcrumb-item"><a href="{{ route('home') }}">Home</a></li>
+                                <li class="breadcrumb-item active" aria-current="page"><a href="{{ route('feedback') }}">Feedback</li>
                             </ul>
                         </nav>
                     </div>
@@ -194,98 +201,20 @@
     <div class="shop-main-wrapper section-padding">
         <div class="container">
             <div class="row">
-                <!-- sidebar area start -->
-                <div class="col-lg-3 order-2 order-lg-1">
-                    <div class="sidebar-wrapper">
-                        <!-- single sidebar start -->
-                        <div class="sidebar-single">
-                            <div class="sidebar-title">
-                                <h3>Categories</h3>
-                            </div>
-                            <div class="sidebar-body">
-                                <ul class="color-list">
-                                    <li><a href="#">Mens <span>(10)</span></a></li>
-                                    <li><a href="#">Womens <span>(05)</span></a></li>
-                                    <li><a href="#">Sports <span>(15)</span></a></li>
-                                    <li><a href="#">Fabric <span>(12)</span></a></li>
-                                    <li><a href="#">Leather <span>(20)</span></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <!-- single sidebar end -->
-
-                        <!-- single sidebar start -->
-                        <div class="sidebar-single">
-                            <div class="sidebar-title">
-                                <h3>filter by price</h3>
-                            </div>
-                            <div class="sidebar-body">
-                                <div class="price-range-wrap">
-                                    <div class="price-range" data-min="20" data-max="400"></div>
-                                    <div class="range-slider">
-                                        <form action="#">
-                                            <div class="price-input">
-                                                <label for="amount">Price: </label>
-                                                <input type="text" id="amount">
-                                            </div>
-                                            <button class="filter-btn">filter</button>
-                                        </form>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- single sidebar end -->
-
-                        <!-- single sidebar start -->
-                        <div class="sidebar-single">
-                            <div class="sidebar-title">
-                                <h3>color</h3>
-                            </div>
-                            <div class="sidebar-body">
-                                <ul class="color-list">
-                                    <li><a href="#">gold <span>(05)</span></a></li>
-                                    <li><a href="#">green <span>(12)</span></a></li>
-                                    <li><a href="#">blue <span>(14)</span></a></li>
-                                    <li><a href="#">white <span>(20)</span></a></li>
-                                    <li><a href="#">red <span>(08)</span></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <!-- single sidebar end -->
-
-                        <!-- single sidebar start -->
-                        <div class="sidebar-single">
-                            <div class="sidebar-title">
-                                <h3>size</h3>
-                            </div>
-                            <div class="sidebar-body">
-                                <ul class="size-list">
-                                    <li><a href="#">L <span>(05)</span></a></li>
-                                    <li><a href="#">M <span>(06)</span></a></li>
-                                    <li><a href="#">S <span>(02)</span></a></li>
-                                    <li><a href="#">XL <span>(01)</span></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <!-- single sidebar end -->
-
-                        <!-- single sidebar start -->
-                        <div class="sidebar-single">
-                            <div class="sidebar-banner">
-                                <a href="#">
-                                    <img src="assets/img/banner/banner_left.jpg" alt="">
-                                </a>
-                            </div>
-                        </div>
-                        <!-- single sidebar end -->
-                    </div>
-                </div>
-                <!-- sidebar area end -->
-
                 <!-- shop main wrapper start -->
-                <div class="col-lg-9 order-1 order-lg-2">
+                <div class="col-lg-12 order-1 order-lg-2">
                     <div class="shop-product-wrapper">
+                        <!-- Add new feedback button start -->
+                        @php
+                        $userId = session('user_id');
+                        @endphp
 
+                        @if($userId)
+                        <div class="mb-3">
+                            <a href="{{ route('feedback.create') }}" class="btn btn-primary">Add Feedback</a>
+                        </div>
+                        @endif
+                        <!-- Add new feedback button end -->
 
                         <!-- product item list start -->
                         <div class="shop-product-wrap list-view row mbn-50">
@@ -297,29 +226,12 @@
                                             <img src="assets/img/product/product-1.jpg" alt="">
                                         </a>
                                     </div>
-                                    <div class="product-content">
-                                        <h5 class="product-name">
-                                            <a href="product-details.html">Leather Mens Slipper</a>
-                                        </h5>
-                                        <div class="price-box">
-                                            <span class="price-regular">CAD 80.00</span>
-                                            <span class="price-old"><del>CAD 70.00</del></span>
-                                        </div>
-                                        <div class="product-action-link">
-                                            <a href="#" data-toggle="tooltip" title="Wishlist"><i class="ion-android-favorite-outline"></i></a>
-                                            <a href="#" data-toggle="tooltip" title="Add To Cart"><i class="ion-bag"></i></a>
-                                            <a href="#" data-toggle="modal" data-target="#quick_view"> <span data-toggle="tooltip" title="Quick View"><i class="ion-ios-eye-outline"></i></span> </a>
-                                        </div>
-                                    </div>
                                 </div>
-
                                 <!-- product grid item end -->
 
                                 <!-- product list item start -->
                                 <div class="shop-product-wrap list-view row mbn-50">
                                     @foreach($feedbacks as $feedback)
-
-
                                     <div class="col-lg-4 col-sm-6">
                                         <div class="product-list-item mb-30">
                                             <div class="product-thumb">
@@ -336,25 +248,31 @@
                                                     <span class="price-old">{{ $feedback->product->price }}</span>
                                                 </div>
                                                 <p>{{ $feedback->feedback }}</p>
-
                                             </div>
                                         </div>
                                     </div>
-
-
                                     @endforeach
 
-                                    <div class="paginatoin-area text-center mt-45">
-                                        <ul class="pagination-box">
-                                            <li><a class="Previous" href="#"><i class="ion-ios-arrow-left"></i></a></li>
-                                            <li class="active"><a href="#">1</a></li>
-                                            <li><a href="#">2</a></li>
-                                            <li><a href="#">3</a></li>
-                                            <li><a href="#">4</a></li>
-                                            <li><a href="#">5</a></li>
-                                            <li><a class="Next" href="#"><i class="ion-ios-arrow-right"></i></a></li>
+                                    <div class="custom-pagination">
+                                        @if($feedbacks->lastPage() > 1)
+                                        <ul class="pagination">
+                                            @if($feedbacks->currentPage() != 1)
+                                            <li class="page-item"><a class="page-link" href="{{ $feedbacks->url($feedbacks->currentPage() - 1) }}">Previous</a></li>
+                                            @endif
+
+                                            @for($i = 1; $i <= $feedbacks->lastPage(); $i++)
+                                                <li class="page-item {{ ($feedbacks->currentPage() == $i) ? 'active' : '' }}">
+                                                    <a class="page-link" href="{{ $feedbacks->url($i) }}">{{ $i }}</a>
+                                                </li>
+                                                @endfor
+
+                                                @if($feedbacks->currentPage() != $feedbacks->lastPage())
+                                                <li class="page-item"><a class="page-link" href="{{ $feedbacks->url($feedbacks->currentPage() + 1) }}">Next</a></li>
+                                                @endif
                                         </ul>
+                                        @endif
                                     </div>
+
 
                                 </div>
 

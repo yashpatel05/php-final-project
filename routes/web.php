@@ -12,6 +12,7 @@ use App\Http\Controllers\Admin\ProductsController;
 use App\Http\Controllers\Admin\BrandsController;
 use App\Http\Controllers\Admin\FeedbacksController;
 use App\Http\Controllers\Admin\ContactsController;
+use App\Http\Controllers\CartController;
 use App\Http\Controllers\LogoutController;
 use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\ContactUsController;
@@ -19,6 +20,8 @@ use App\Http\Controllers\AboutUsController;
 use App\Http\Controllers\FeedbackController;
 use App\Http\Controllers\MyOrdersController;
 use App\Http\Controllers\MyAccountController;
+use App\Http\Controllers\CheckoutController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -83,9 +86,24 @@ Route::group(['prefix' => 'user'], function () {
     Route::get('/contactus', [ContactUsController::class, 'index'])->name('contactus');
     Route::post('/contactus', [ContactUsController::class, 'store'])->name('contactus.store');
     Route::get('/aboutus', [AboutUsController::class, 'index'])->name('aboutus');
-    Route::get('/feedback', [FeedbackController::class, 'index'])->name('feedback');
     Route::get('/myorder', [MyOrdersController::class, 'index'])->name('myorder');
     Route::get('/myaccount', [MyAccountController::class, 'index'])->name('myaccount');
+    Route::post('/myaccount/update', [MyAccountController::class, 'update'])->name('myaccount.update');
+    Route::post('/change-password', [MyAccountController::class, 'changePassword'])->name('change-password');
+
+    // Routes for feedbacks
+    Route::get('/feedback', [FeedbackController::class, 'index'])->name('feedback');
+    Route::get('/feedback/create', [FeedbackController::class, 'create'])->name('feedback.create');
+    Route::post('/feedback/store', [FeedbackController::class, 'store'])->name('feedback.store');
+
+    // Routes for carts
+    Route::get('/cart', [CartController::class, 'index'])->name('cart');
+    Route::post('/cart', [CartController::class, 'store'])->name('cart.store');
+    Route::match(['get', 'delete'], '/cart/delete/{id}', [CartController::class, 'delete'])->name('cart.delete');
+
+    // Routes for payments
+    Route::get('/checkout', [CheckoutController::class, 'index'])->name('checkout.index');
+    Route::post('/place-order', [CheckoutController::class, 'placeOrder'])->name('placeorder');
 });
 
 // Route for the login page

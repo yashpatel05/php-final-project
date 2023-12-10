@@ -63,9 +63,7 @@
                                         </td>
                                         <td class="pro-title"><a href="#">{{ $order_detail->product->name }}</a></td>
                                         <td class="pro-price"><span>CAD {{ $order_detail->product->price }}</span></td>
-                                        <td>
-                                            <input type="text" class="form-control text-center" value="{{ $order_detail->quantity }}">
-                                        </td>
+                                        <td><span>{{ $order_detail->quantity }}</span></td>
                                         <td class="pro-price"><span>CAD {{ $order_detail->total_amount }}</span></td>
                                         <!--<td class="pro-subtotal"><span></span></td>-->
                                     </tr>
