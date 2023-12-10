@@ -111,7 +111,7 @@
 
 10. User - My Orders
 
-    ![image](https://github.com/2023-Fall-ITE-5330-0NA/final-project-repo-team-404/assets/43314539/da044feb-de77-407f-abe7-9194e6e443f6)
+    ![image](https://github.com/2023-Fall-ITE-5330-0NA/final-project-repo-team-404/assets/43314539/9fb20b47-93df-4577-af63-6e481720d743)
 
 11. User - My Account
 
@@ -124,7 +124,6 @@
     ![image](https://github.com/2023-Fall-ITE-5330-0NA/final-project-repo-team-404/assets/43314539/442614f0-73e5-478c-8612-c7f3dd09aa0b)
 
     ![image](https://github.com/2023-Fall-ITE-5330-0NA/final-project-repo-team-404/assets/43314539/a62e66dc-22d4-43df-9b6e-f9f2f64c6fef)
-
 
     **Change Password**
 
@@ -188,7 +187,7 @@
 
     ![image](https://github.com/2023-Fall-ITE-5330-0NA/final-project-repo-team-404/assets/43314539/6675901d-f0d9-4699-a0f2-3e697fe0a972)
 
-20. User - Add to carts
+20. User - Add to cart
 
     ![image](https://github.com/2023-Fall-ITE-5330-0NA/final-project-repo-team-404/assets/43314539/6a58dcb3-fb22-4f53-af7d-995f5207ddc3)
 
@@ -196,7 +195,7 @@
 
     ![image](https://github.com/2023-Fall-ITE-5330-0NA/final-project-repo-team-404/assets/43314539/d3810c41-3e3a-471f-bdd6-d8ce58bdbf51)
 
-    **Delete the item from the carts**
+    **Delete the item from the cart**
 
     ![image](https://github.com/2023-Fall-ITE-5330-0NA/final-project-repo-team-404/assets/43314539/7e07914a-25bb-45c1-bcfb-1fdb19c29e37)
 
