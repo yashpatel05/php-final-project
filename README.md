@@ -71,7 +71,7 @@
    
    **From Admin View**
    
-   ![image](https://github.com/2023-Fall-ITE-5330-0NA/group-project-team-404/assets/43314539/813270a2-472e-48fb-891f-ad7c368a91b6)
+   ![image](https://github.com/2023-Fall-ITE-5330-0NA/final-project-repo-team-404/assets/43314539/929ff1d7-36e1-4e04-99dd-c3366dbe028d)
 
    ![image](https://github.com/2023-Fall-ITE-5330-0NA/group-project-team-404/assets/43314539/88107233-f0e0-4b1f-876b-463f4528272a)
 
