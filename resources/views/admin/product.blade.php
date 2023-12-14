@@ -24,7 +24,9 @@
             <div class="card-body">
               <div class="table-responsive">
                 <table class="table table-striped table-hover" id="tableExport" style="width:100%;">
-                  <a href="{{ route('admin.product.create') }}">Add Product</a>
+                  <div class="text-right">
+                    <a href="{{ route('admin.product.create') }}" class="btn btn-primary">Add Product</a>
+                  </div>
                   <thead>
                     <tr>
                       <th>Id</th>

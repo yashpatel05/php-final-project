@@ -43,19 +43,19 @@
                             @endif
                             <div class="row">
                                 <div class="col-lg-6 col-md-6 col-sm-6">
-                                    <input name="name" placeholder="Name *" type="text" required>
+                                    <input name="name" placeholder="Name *" type="text" required value="{{ old('name') }}">
                                 </div>
                                 <div class="col-lg-6 col-md-6 col-sm-6">
-                                    <input name="phone" placeholder="Phone *" type="text" required>
+                                    <input name="phone" placeholder="Phone *" type="text" required value="{{ old('phone') }}">
                                 </div>
                                 <div class="col-lg-6 col-md-6 col-sm-6">
-                                    <input name="email" placeholder="Email *" type="text" required>
+                                    <input name="email" placeholder="Email *" type="text" required value="{{ old('email') }}">
                                 </div>
                                 <div class="col-lg-6 col-md-6 col-sm-6">
-                                    <input name="subject" placeholder="subject *" type="text" required>
+                                    <input name="subject" placeholder="Subject *" type="text" required value="{{ old('subject') }}">
                                 </div>
                                 <div class="col-lg-12 col-md-12 col-sm-12">
-                                    <textarea name="message" placeholder="message *"></textarea>
+                                    <textarea name="message" placeholder="Message *">{{ old('message') }}</textarea>
                                 </div>
                                 <div class="col-12">
                                     <div class="contact-btn">

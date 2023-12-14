@@ -24,7 +24,9 @@
             <div class="card-body">
               <div class="table-responsive">
                 <table class="table table-striped table-hover" id="tableExport" style="width:100%;">
-                  <a href="{{ route('admin.subcategory.create') }}">Add Sub-Category</a>
+                  <div class="text-right">
+                    <a href="{{ route('admin.subcategory.create') }}" class="btn btn-primary">Add Sub-Category</a>
+                  </div>
                   <thead>
                     <tr>
                       <th>Id</th>

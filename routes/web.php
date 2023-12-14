@@ -12,6 +12,7 @@ use App\Http\Controllers\Admin\ProductsController;
 use App\Http\Controllers\Admin\BrandsController;
 use App\Http\Controllers\Admin\FeedbacksController;
 use App\Http\Controllers\Admin\ContactsController;
+use App\Http\Controllers\Admin\OrderDetailsController;
 use App\Http\Controllers\LogoutController;
 use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\ContactUsController;
@@ -21,6 +22,7 @@ use App\Http\Controllers\MyOrdersController;
 use App\Http\Controllers\MyAccountController;
 use App\Http\Controllers\CartController;
 use App\Http\Controllers\CheckoutController;
+use App\Http\Controllers\WishlistController;
 
 /*
 |--------------------------------------------------------------------------
@@ -37,8 +39,6 @@ Route::get('/', [HomeController::class, 'index'])->name('home');
 
 Route::group(['prefix' => 'admin'], function () {
     Route::get('/dashboard', [DashboardController::class, 'index'])->name('admin.dashboard');
-    Route::get('/orders/accept/{id}/{uid}', [DashboardController::class, 'acceptOrder'])->name('admin.orders.accept');
-    Route::get('/orders/reject/{id}/{uid}', [DashboardController::class, 'rejectOrder'])->name('admin.orders.reject');
     Route::get('/users', [UsersController::class, 'index'])->name('admin.user');
 
     // Routes for categories
@@ -75,10 +75,14 @@ Route::group(['prefix' => 'admin'], function () {
 
     // Routes for feedbacks
     Route::get('/feedbacks', [FeedbacksController::class, 'index'])->name('admin.feedback');
+    Route::post('feedback-reply/{id}', [FeedbacksController::class, 'feedbackReply'])->name('admin.feedback-reply');
 
     // Routes for contacts
     Route::get('/contacts', [ContactsController::class, 'index'])->name('admin.contact');
     Route::post('/contacts/marksolved/{id}', [ContactsController::class, 'markSolved'])->name('admin.contact.markSolved');
+
+    // Routes for order details
+    Route::get('/order-details', [OrderDetailsController::class, 'index'])->name('admin.order-details');
 });
 
 Route::group(['prefix' => 'user'], function () {
@@ -103,6 +107,11 @@ Route::group(['prefix' => 'user'], function () {
     // Routes for payments
     Route::get('/checkout', [CheckoutController::class, 'index'])->name('checkout.index');
     Route::post('/place-order', [CheckoutController::class, 'placeOrder'])->name('placeorder');
+
+    //Routes for wishlists
+    Route::get('/wishlist', [WishlistController::class, 'index'])->name('wishlist.index');
+    Route::post('/wishlist/add', [WishlistController::class, 'store'])->name('wishlist.add');
+    Route::match(['get', 'delete'], '/wishlist/delete/{id}', [WishlistController::class, 'delete'])->name('wishlist.delete');
 });
 
 // Route for the login page

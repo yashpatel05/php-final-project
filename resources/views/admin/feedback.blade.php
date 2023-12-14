@@ -3,6 +3,14 @@
 @section('title', 'Feedback')
 
 @section('content')
+@if(session()->has('success') && !empty(session('success')))
+<script>
+  // JavaScript for displaying the alert
+  window.onload = function() {
+    alert("{{ session('success') }}");
+  };
+</script>
+@endif
 <!-- Main Content -->
 <div class="main-content">
   <section class="section">
@@ -23,6 +31,7 @@
                       <th>Product Name</th>
                       <th>Feedback</th>
                       <th>Date</th>
+                      <th>Send Message</th>
                     </tr>
                   </thead>
 
@@ -33,7 +42,26 @@
                       <td>{{ $feedback->user->name }}</td>
                       <td>{{ $feedback->product->name }}</td>
                       <td>{{ $feedback->feedback }}</td>
-                      <td>{{ $feedback->date }}</td>
+                      <td>{{ $feedback->created_at }}</td>
+                      <td>
+                        <form method="POST" action="{{ route('admin.feedback-reply', ['id' => $feedback->id]) }}">
+                          @csrf
+                          <!-- Display validation errors -->
+                          @if($errors->any())
+                          <div class="alert alert-danger">
+                            <ul>
+                              @foreach($errors->all() as $error)
+                              <li>{{ $error }}</li>
+                              @endforeach
+                            </ul>
+                          </div>
+                          @endif
+                          <label for="admin_message">Admin Message:</label>
+                          <textarea name="admin_message_text" id="admin_message_text" rows="4" cols="50" required></textarea>
+                          <br>
+                          <button type="submit" style="color: #18F70D; cursor: pointer">Send Message</button>
+                        </form>
+                      </td>
                     </tr>
                     @endforeach
                   </tbody>

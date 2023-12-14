@@ -52,7 +52,20 @@
                       <td>
                         <form method="POST" action="{{ route('admin.contact.markSolved', ['id' => $contact->id]) }}">
                           @csrf
-                          <button type="submit" style="color: #18F70D; cursor: pointer">Problem Solved</button>
+                          <!-- Display validation errors -->
+                          @if($errors->any())
+                          <div class="alert alert-danger">
+                            <ul>
+                              @foreach($errors->all() as $error)
+                              <li>{{ $error }}</li>
+                              @endforeach
+                            </ul>
+                          </div>
+                          @endif
+                          <label for="admin_message">Admin Message:</label>
+                          <textarea name="admin_message" id="admin_message" rows="4" cols="50" required></textarea>
+                          <br>
+                          <button type="submit" style="color: #18F70D; cursor: pointer">Mark as Solved</button>
                         </form>
                       </td>
                     </tr>

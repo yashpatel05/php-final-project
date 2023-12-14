@@ -11,6 +11,7 @@ use App\Models\OrderDetail;
 use App\Models\Category;
 use App\Models\Cart;
 use App\Models\User;
+use App\Models\Product;
 
 class CheckoutController extends Controller
 {
@@ -95,23 +96,29 @@ class CheckoutController extends Controller
 
             // Iterate over each cart item and insert into order_details
             foreach ($cartItems as $cartItem) {
+                $quantityToDeduct = $cartItem->quantity;
+
+                // Deduct the purchased quantity from the products table
+                Product::where('id', $cartItem->product_id)
+                    ->decrement('quantity', $quantityToDeduct);
+
                 OrderDetail::create([
                     'order_id' => $order->id,
                     'product_id' => $cartItem->product_id,
-                    'quantity' => $cartItem->quantity,
-                    'total_amount' => $cartItem->price * $cartItem->quantity,
+                    'quantity' => $quantityToDeduct,
+                    'total_amount' => $cartItem->price * $quantityToDeduct,
                 ]);
 
                 // Store product information for the email
                 $productsInfo[] = [
                     'name' => $cartItem->product->name,
-                    'quantity' => $cartItem->quantity,
+                    'quantity' => $quantityToDeduct,
                     'price' => $cartItem->price,
-                    'total' => $cartItem->price * $cartItem->quantity,
+                    'total' => $cartItem->price * $quantityToDeduct,
                 ];
 
                 // Increment the total amount
-                $totalAmount += $cartItem->price * $cartItem->quantity;
+                $totalAmount += $cartItem->price * $quantityToDeduct;
             }
 
             // Process the payment using the FakePaymentGateway

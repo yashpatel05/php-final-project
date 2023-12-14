@@ -79,6 +79,7 @@
                                         @if (session()->has('user_id'))
                                         <!-- Code for authenticated user -->
                                         <li><a href="{{ route('myaccount') }}">My account</a></li>
+                                        <li><a href="{{ route('wishlist.index') }}">Wishlist</a></li>
                                         <li><a href="{{ route('logout') }}">Logout</a></li>
                                         @else
                                         <!-- Code for non-authenticated user -->
@@ -118,7 +119,7 @@
                     </div>
                     <div class="mobile-menu-toggler">
                         <div class="mini-cart-wrap">
-                            <a href="{{ url('#cart.html') }}">
+                            <a href="{{route('cart') }}">
                                 <i class="ion-bag"></i>
                             </a>
                         </div>

@@ -68,11 +68,7 @@ $user = App\Models\User::find(session('user_id'));
           </li>
 
           <li>
-            <a href="#" class="nav-link"><i data-feather="grid"></i><span>Order</span></a>
-          </li>
-
-          <li>
-            <a href="#" class="nav-link"><i data-feather="grid"></i><span>Order Details</span></a>
+            <a href="{{ route('admin.order-details') }}" class="nav-link"><i data-feather="grid"></i><span>Order Details</span></a>
           </li>
 
           <li>
@@ -82,41 +78,6 @@ $user = App\Models\User::find(session('user_id'));
           <li>
             <a href="{{ route('admin.contact') }}" class="nav-link"><i data-feather="grid"></i><span>Contact</span></a>
           </li>
-
-          <li class="dropdown">
-            <a href="{{ route('admin.dashboard') }}" class="menu-toggle nav-link has-dropdown"><i data-feather="layout"></i><span>Reports</span></a>
-            <ul class="dropdown-menu">
-
-              <li>
-                <a href="#" class="nav-link"><i data-feather="grid"></i><span>order Report</span></a>
-              </li>
-
-              <li>
-                <a href="#" class="nav-link"><i data-feather="grid"></i><span>User Report</span></a>
-              </li>
-
-              <li>
-                <a href="#" class="nav-link"><i data-feather="grid"></i><span>User Report</span></a>
-              </li>
-
-              <li>
-                <a href="#" class="nav-link"><i data-feather="grid"></i><span>Category Report</span></a>
-              </li>
-
-              <li>
-                <a href="#" class="nav-link"><i data-feather="grid"></i><span>Brand Report</span></a>
-              </li>
-
-              <li>
-                <a href="#" class="nav-link"><i data-feather="grid"></i><span>Product Report</span></a>
-              </li>
-
-              <li>
-                <a href="#" class="nav-link"><i data-feather="grid"></i><span>Feedback Report</span></a>
-              </li>
-            </ul>
-          </li>
-
     </div>
     </aside>
   </div>

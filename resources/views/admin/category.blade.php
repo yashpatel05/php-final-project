@@ -26,7 +26,9 @@
 
 
                 <table class="table table-striped table-hover" id="tableExport" style="width:100%;">
-                  <a href="{{ route('admin.category.create') }}">Add Category</a>
+                  <div class="text-right">
+                    <a href="{{ route('admin.category.create') }}" class="btn btn-primary">Add Category</a>
+                  </div>
                   <thead>
                     <tr>
                       <th>Id</th>

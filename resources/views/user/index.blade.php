@@ -62,7 +62,7 @@
                         </a>
                         <div class="banner-text">
                             <h5 class="banner-subtitle">sports shoes</h5>
-                            <h3 class="banner-title">20% Off<br>For Sports men</h3>
+                            <h3 class="banner-title">20% Off<br>For Sports women</h3>
                         </div>
                     </div>
                 </div>
@@ -100,7 +100,7 @@
                         @foreach($products as $product)
                         <div class="product-item mb-50">
                             <div class="product-thumb">
-                                <a href="{{ url('product-details?id=' . $product->id) }}">
+                                <a href="#">
                                     <img height="200" src="{{ asset('assets/img/product/' . $product->image) }}" alt="">
                                 </a>
                                 <div class="product-content">
@@ -108,26 +108,57 @@
                                     <div class="price-box mb-1">
                                         <span class="price-regular">CAD {{ $product->price }}</span>
                                     </div>
-                                    <form action="{{ route('cart.store') }}" method="post">
+                                    @if($product->quantity > 0)
+                                    <div style="text-align: center; margin-bottom: 1em;">
+                                        <form action="{{ route('cart.store') }}" method="post">
+                                            @csrf
+                                            <input type="hidden" name="product_id" value="{{ $product->id }}">
+                                            <input type="hidden" name="product_price" value="{{ $product->price }}">
+                                            <div class="quantity-input mb-2">
+                                                <label for="quantity">Qty:</label>
+                                                <input type="number" name="quantity" value="1" min="1" style="width: 40px;">
+                                            </div>
+                                            <button type="submit" class="btn btn-primary">Add To Cart</button>
+                                        </form>
+                                        <br> <!-- Line break for spacing -->
+                                        <form action="{{ route('wishlist.add') }}" method="post">
+                                            @csrf
+                                            <!-- Display validation errors -->
+                                            @if($errors->any())
+                                            <div class="alert alert-danger">
+                                                <ul>
+                                                    @foreach($errors->all() as $error)
+                                                    <li>{{ $error }}</li>
+                                                    @endforeach
+                                                </ul>
+                                            </div>
+                                            @endif
+                                            <input type="hidden" name="product_id" value="{{ $product->id }}">
+                                            <button type="submit" class="btn btn-primary"><i class="fa fa-heart"></i> Wishlist</button>
+                                        </form>
+                                    </div>
+                                    @else
+                                    <p class="out-of-stock-message" style="color: red; font-size: 18px; margin-top: 80px;">Out of Stock</p>
+                                    <form action="{{ route('wishlist.add') }}" method="post">
                                         @csrf
-                                        <input type="hidden" name="product_id" value="{{ $product->id }}">
-                                        <input type="hidden" name="product_price" value="{{ $product->price }}">
-                                        <div class="quantity-input mb-2">
-                                            <label for="quantity">Qty:</label>
-                                            <input type="number" name="quantity" value="1" min="1" style="width: 40px;">
+                                        <!-- Display validation errors -->
+                                        @if($errors->any())
+                                        <div class="alert alert-danger">
+                                            <ul>
+                                                @foreach($errors->all() as $error)
+                                                <li>{{ $error }}</li>
+                                                @endforeach
+                                            </ul>
                                         </div>
-                                        <button type="submit" class="btn btn-primary">Add To Cart</button>
+                                        @endif
+                                        <input type="hidden" name="product_id" value="{{ $product->id }}">
+                                        <button type="submit" class="btn btn-primary" style="margin-top: 10px;"><i class="fa fa-heart"></i> Wishlist</button>
                                     </form>
+                                    @endif
                                 </div>
                             </div>
                         </div>
                         @endforeach
-
-                        <!-- product single item start -->
-
-
-
-                        <!-- product single item start -->
                     </div>
                 </div>
             </div>

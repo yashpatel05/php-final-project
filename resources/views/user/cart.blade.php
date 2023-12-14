@@ -53,7 +53,7 @@
                                     <tr>
                                         <td class="pro-thumbnail"><a href="#"><img class="img-fluid" src="{{ asset('assets/img/product/' . $cart->product->image) }}" alt="Product" /></a></td>
                                         <td class="pro-title">{{ $cart->product->name }}</td>
-                                        <td class="pro-price"><span>${{ $cart->price }}</span></td>
+                                        <td class="pro-price"><span>CAD {{ $cart->price }}</span></td>
                                         <td class="pro-quantity">{{ $cart->quantity }}</td>
                                         <td class="pro-subtotal">
                                             <span>${{ $cart->product->price * $cart->quantity }}</span>

@@ -112,46 +112,26 @@
             <div class="table-responsive">
               <table class="table table-striped">
                 <tr>
-                  <th class="text-center">
-                    <div class="custom-checkbox custom-checkbox-table custom-control">
-                      <input type="checkbox" data-checkboxes="mygroup" data-checkbox-role="dad" class="custom-control-input" id="checkbox-all">
-                      <label for="checkbox-all" class="custom-control-label">&nbsp;</label>
-                    </div>
-                  </th>
                   <th>Order id</th>
-                  <th>Order Description</th>
-                  <th>Order Date/Time</th>
-                  <th>Payment Status</th>
+                  <th>Date/Time</th>
                   <th>User Name</th>
-                  <th>Order Status</th>
-                  <th>Action</th>
+                  <th>Product Name</th>
+                  <th>Price</th>
+                  <th>Quantity</th>
+                  <th>Total Amount</th>
 
                   @foreach ($orders as $order)
+                  @foreach ($order->orderDetails as $orderDetail)
                 <tr>
-                  <td></td>
-                  <td>{{ $order->id }}</td>
-                  <td>{{ $order->description }}</td>
+                  <td>{{ $orderDetail->id }}</td>
                   <td>{{ $order->order_date }}</td>
-                  <td>{{ $order->payment_status }}</td>
                   <td>{{ $order->user->name }}</td>
-                  <td>{{ $order->order_status }}</td>
-                  <td>
-                    @if ($order->order_status == 0)
-                    {{--
-                          <a href="{{ route('order.accept', ['id' => $order->Order_id, 'uid' => $order->User_id]) }}" style="color: #18F70D; cursor: pointer">ACCEPT</a>
-                    &nbsp;
-                    <a href="{{ route('order.reject', ['id' => $order->Order_id, 'uid' => $order->User_id]) }}" style="color: red; cursor: pointer">REJECT</a>
-                    --}}
-
-                    <a href="#" style="color: #18F70D; cursor: pointer">ACCEPT</a> &nbsp;
-                    <a href="#" style="color: red; cursor: pointer">REJECT</a>
-                    @elseif ($order->order_status == 1)
-                    <h6 style="color: #18F70D">ACCEPTED</h6>
-                    @elseif ($order->order_status == 2)
-                    <h6 style="color: red">REJECTED</h6>
-                    @endif
-                  </td>
+                  <td>{{ $orderDetail->product->name }}</td>
+                  <td>{{ $orderDetail->product->price }}</td>
+                  <td>{{ $orderDetail->quantity }}</td>
+                  <td>{{ $orderDetail->total_amount }}</td>
                 </tr>
+                @endforeach
                 @endforeach
                 </tr>
               </table>

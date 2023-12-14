@@ -8,7 +8,6 @@
 - [x] **Data Population:** Populated the database with diverse and relevant shoe data for comprehensive testing and demonstration.
 - [x] **Website Design:** Implemented visually appealing and marketable designs for The Shoe Company's user home page, admin dashboard, and additional pages.
 - [x] **User Authentication:** Incorporated features for user login, logout, and registration, enhancing the security and personalization of the platform.
-- [x] **Contact Us and About Us Pages:** Developed dedicated pages to provide users with information about the company and facilitate communication.
 - [x] **Admin Dashboard:** Created a dashboard for administrators with specialized functionalities for managing the e-commerce platform.
 - [x] **JavaScript and jQuery Functionalities:** Infused interactive features into the website to enhance user engagement across different pages.
 - [x] **Responsive Design:** Optimized the layout for consistent display across various browsers and devices.
@@ -34,13 +33,13 @@
 ## Screenshots of features
 1. Designer View
    
-   ![image](https://github.com/2023-Fall-ITE-5330-0NA/group-project-team-404/assets/43314539/523b0f71-91ab-48fe-8dcf-29dbe6de2f43)
-   
+   ![image](https://github.com/2023-Fall-ITE-5330-0NA/final-project-repo-team-404/assets/43314539/853b7126-597f-4126-a975-8a8c9d08503a)
+
 2. Home Page for User
    
-   ![image](https://github.com/2023-Fall-ITE-5330-0NA/group-project-team-404/assets/43314539/8617a63d-11d6-437a-ad9b-984bad16863d)
+   ![image](https://github.com/2023-Fall-ITE-5330-0NA/final-project-repo-team-404/assets/43314539/c358f589-ebff-47df-b81d-efa58086ec22)
 
-   ![image](https://github.com/2023-Fall-ITE-5330-0NA/group-project-team-404/assets/43314539/fa5b2d0a-6c03-4e6c-8fe3-d6d3c9dd9f13)
+   ![image](https://github.com/2023-Fall-ITE-5330-0NA/final-project-repo-team-404/assets/43314539/2b2ea724-0d74-4bce-83d8-939f0f4cad2d)
 
 3. Dashboard for Admin
 
@@ -92,13 +91,27 @@
 
 9. User - Feedback
 
-   ![image](https://github.com/2023-Fall-ITE-5330-0NA/final-project-repo-team-404/assets/43314539/7d7a992c-1dc9-4aa1-8635-c1c176b674e4)
+   **If User not logged in - Show all feedbacks**
+   
+   ![image](https://github.com/2023-Fall-ITE-5330-0NA/final-project-repo-team-404/assets/43314539/1098a59b-add4-4ec9-a3f3-2e7a7e62b795)
 
-   ![image](https://github.com/2023-Fall-ITE-5330-0NA/final-project-repo-team-404/assets/43314539/316be176-f0d6-40f7-8c18-9c108fe53603)
+   ![image](https://github.com/2023-Fall-ITE-5330-0NA/final-project-repo-team-404/assets/43314539/ccc9848d-83a4-4eb5-a694-cc62e2406804)
+
+   **If User logged in - Show user's feedbacks**
+   
+   ![image](https://github.com/2023-Fall-ITE-5330-0NA/final-project-repo-team-404/assets/43314539/708db243-de8d-4c55-8944-89e18f7b87d7)
+
+   **Add Feedback**
+
+   ![image](https://github.com/2023-Fall-ITE-5330-0NA/final-project-repo-team-404/assets/43314539/88829e94-a250-45c4-8e0b-ad77f4afd69e)
+
+   ![image](https://github.com/2023-Fall-ITE-5330-0NA/final-project-repo-team-404/assets/43314539/b60bbb95-466a-49f2-9b23-ce026e6ab2fa)
+
+   ![image](https://github.com/2023-Fall-ITE-5330-0NA/final-project-repo-team-404/assets/43314539/8eca9851-b3e8-4222-8a57-fb4bd72075cb)
 
 10. User - My Orders
 
-    ![image](https://github.com/2023-Fall-ITE-5330-0NA/final-project-repo-team-404/assets/43314539/da044feb-de77-407f-abe7-9194e6e443f6)
+    ![image](https://github.com/2023-Fall-ITE-5330-0NA/final-project-repo-team-404/assets/43314539/9fb20b47-93df-4577-af63-6e481720d743)
 
 11. User - My Account
 
@@ -106,17 +119,23 @@
 
     **Edit Account details**
 
-    ![image](https://github.com/2023-Fall-ITE-5330-0NA/final-project-repo-team-404/assets/43314539/d551b599-7cf9-4120-98c2-a787df58cb80)
+    ![image](https://github.com/2023-Fall-ITE-5330-0NA/final-project-repo-team-404/assets/43314539/0259b634-3340-4c2c-8271-7e8eb806a71a)
+
+    ![image](https://github.com/2023-Fall-ITE-5330-0NA/final-project-repo-team-404/assets/43314539/442614f0-73e5-478c-8612-c7f3dd09aa0b)
+
+    ![image](https://github.com/2023-Fall-ITE-5330-0NA/final-project-repo-team-404/assets/43314539/a62e66dc-22d4-43df-9b6e-f9f2f64c6fef)
 
     **Change Password**
 
-    ![image](https://github.com/2023-Fall-ITE-5330-0NA/final-project-repo-team-404/assets/43314539/4e3d0c1e-2346-45f2-a1af-12e818e79d5b)
+    ![image](https://github.com/2023-Fall-ITE-5330-0NA/final-project-repo-team-404/assets/43314539/459cb26c-78dd-4dd6-b24f-4de18bc54db4)
 
-12. Admin - User
+    ![image](https://github.com/2023-Fall-ITE-5330-0NA/final-project-repo-team-404/assets/43314539/8c35688a-6c35-41c0-bef7-914f37f8b376)
+
+13. Admin - User
 
     ![image](https://github.com/2023-Fall-ITE-5330-0NA/final-project-repo-team-404/assets/43314539/e02a6bb2-822b-4a46-8b33-e85ca98e949e)
 
-13. Admin - Category
+14. Admin - Category
 
     ![image](https://github.com/2023-Fall-ITE-5330-0NA/final-project-repo-team-404/assets/43314539/b465bf10-2d1b-4ecc-88ed-eeffe145afdf)
 
@@ -142,23 +161,23 @@
 
     ![image](https://github.com/2023-Fall-ITE-5330-0NA/final-project-repo-team-404/assets/43314539/cff473c0-c93c-4dd7-b5d4-8e4ac629ae4f)
 
-14. Admin - Sub-Category with Add, Edit and Delete
+15. Admin - Sub-Category with Add, Edit and Delete
 
     ![image](https://github.com/2023-Fall-ITE-5330-0NA/final-project-repo-team-404/assets/43314539/006add78-bafb-4537-bfd8-3510335e5a37)
 
-15. Admin - Product with Add, Edit and Delete
+16. Admin - Product with Add, Edit and Delete
 
     ![image](https://github.com/2023-Fall-ITE-5330-0NA/final-project-repo-team-404/assets/43314539/a8fb28b1-4ec5-4c8b-b9e0-6dea404c916b)
 
-16. Admin - Brand with Add, Edit and Delete
+17. Admin - Brand with Add, Edit and Delete
 
     ![image](https://github.com/2023-Fall-ITE-5330-0NA/final-project-repo-team-404/assets/43314539/9b2986c3-822c-42e3-b5cd-e6088160a4a7
 
-17. Admin - Feedback
+18. Admin - Feedback
 
     ![image](https://github.com/2023-Fall-ITE-5330-0NA/final-project-repo-team-404/assets/43314539/c734f826-f866-497e-bf79-e5569fa0eeec)
 
-18. Admin - Contacts
+19. Admin - Contacts
 
     ![image](https://github.com/2023-Fall-ITE-5330-0NA/final-project-repo-team-404/assets/43314539/c56f9250-d3d6-49f5-98f6-bb7ca1fb173c)
 
@@ -167,3 +186,33 @@
     ![image](https://github.com/2023-Fall-ITE-5330-0NA/final-project-repo-team-404/assets/43314539/1198e270-a6ef-4844-a417-6d4782d17219)
 
     ![image](https://github.com/2023-Fall-ITE-5330-0NA/final-project-repo-team-404/assets/43314539/6675901d-f0d9-4699-a0f2-3e697fe0a972)
+
+20. User - Add to cart
+
+    ![image](https://github.com/2023-Fall-ITE-5330-0NA/final-project-repo-team-404/assets/43314539/6a58dcb3-fb22-4f53-af7d-995f5207ddc3)
+
+    ![image](https://github.com/2023-Fall-ITE-5330-0NA/final-project-repo-team-404/assets/43314539/9ee383ba-1ed9-4328-83a3-f948374898fa)
+
+    ![image](https://github.com/2023-Fall-ITE-5330-0NA/final-project-repo-team-404/assets/43314539/d3810c41-3e3a-471f-bdd6-d8ce58bdbf51)
+
+    **Delete the item from the cart**
+
+    ![image](https://github.com/2023-Fall-ITE-5330-0NA/final-project-repo-team-404/assets/43314539/7e07914a-25bb-45c1-bcfb-1fdb19c29e37)
+
+21. User - Payment
+
+    ![image](https://github.com/2023-Fall-ITE-5330-0NA/final-project-repo-team-404/assets/43314539/4299bd86-87d6-4e54-87d6-b00a749646b5)
+
+    ![image](https://github.com/2023-Fall-ITE-5330-0NA/final-project-repo-team-404/assets/43314539/cf173a4a-b86a-4450-a579-bd70b97124bd)
+
+    **Validation Error**
+
+    ![image](https://github.com/2023-Fall-ITE-5330-0NA/final-project-repo-team-404/assets/43314539/e40a74d5-898a-45c9-a2f0-791cf4bc8136)
+
+    **Payment Successful**
+
+    ![image](https://github.com/2023-Fall-ITE-5330-0NA/final-project-repo-team-404/assets/43314539/1af3bb41-d9c2-4cf5-ad80-c5ce9bd91f64)
+    
+22. User - Confirmation Mail
+
+    ![image](https://github.com/2023-Fall-ITE-5330-0NA/final-project-repo-team-404/assets/43314539/5aaf5a62-7997-418a-9c80-bb8b9ce996b1)
