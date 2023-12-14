@@ -39,7 +39,7 @@
 ## Screenshots of features
 1. Designer View
    
-   ![image](https://github.com/2023-Fall-ITE-5330-0NA/final-project-repo-team-404/assets/43314539/853b7126-597f-4126-a975-8a8c9d08503a)
+   ![image](https://github.com/2023-Fall-ITE-5330-0NA/final-project-repo-team-404/assets/43314539/18180c01-994e-48fb-af88-f89dfd8f66f0)
 
 2. Home Page for User
    
@@ -49,7 +49,7 @@
 
 3. Dashboard for Admin
 
-   ![image](https://github.com/2023-Fall-ITE-5330-0NA/group-project-team-404/assets/43314539/4d2f2fea-8c33-41ad-9dc8-b0fc5b7d4caf)
+   ![image](https://github.com/2023-Fall-ITE-5330-0NA/final-project-repo-team-404/assets/43314539/693673d4-e1dc-4694-be1a-a127bb6363b6)
 
 4. Login
 
