@@ -177,7 +177,7 @@
 
 17. Admin - Brand with Add, Edit and Delete
 
-    ![image](https://github.com/2023-Fall-ITE-5330-0NA/final-project-repo-team-404/assets/43314539/9b2986c3-822c-42e3-b5cd-e6088160a4a7
+    ![image](https://github.com/2023-Fall-ITE-5330-0NA/final-project-repo-team-404/assets/43314539/9b2986c3-822c-42e3-b5cd-e6088160a4a7)
 
 18. Admin - Feedback
 
