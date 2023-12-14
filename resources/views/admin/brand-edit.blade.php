@@ -9,7 +9,7 @@
     <div class="section-body">
       <div class="row">
         <div class="col-12 col-md-12 col-lg-12">
-          <form enctype="multipart/form-data" method="post" action="{{ route('admin.brand.update') }}">
+          <form enctype="multipart/form-data" method="post" action="{{ route('admin.brand.update', ['id' => $brand->id]) }}">
             @csrf
             <!-- Display validation errors -->
             @if($errors->any())
@@ -28,20 +28,18 @@
               <div class="card-body">
                 <div class="form-group">
                   <label>Brand Name</label>
-                  <input type="text" class="form-control" name="name" value="{{ brand->name }}">
+                  <input type="text" class="form-control" name="name" value="{{ old('name', $brand->name) }}">
                 </div>
 
                 <div class="section-title"> Logo</div>
-                <div class="form-control">
+                <div class="form-group">
                   <input type="file" class="form-control" id="customFile" name="logo">
-                  <label class="custom-file-label" for="customFile">Choose file</label>
-                </div>
 
-                <div class="card-footer text-right">
-                  <button class="btn btn-primary mr-1" type="submit">Submit</button>
-                  <button class="btn btn-secondary" type="reset">Reset</button>
+                  <div class="card-footer text-right">
+                    <button class="btn btn-primary mr-1" type="submit">Submit</button>
+                    <button class="btn btn-secondary" type="reset">Reset</button>
+                  </div>
                 </div>
-              </div>
           </form>
         </div>
       </div>

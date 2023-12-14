@@ -29,10 +29,7 @@ class BrandsController extends Controller
 
         // Handle file upload
         $imageName = time() . '.' . $request->image->extension();
-        $request->image->move(public_path('assets/product'), $imageName);
-
-        // Upload the logo
-        $logoPath = $request->file('image')->store('/assets/img/product/', 'public');
+        $request->image->move(public_path('assets/img/product'), $imageName);
 
         // Create a new brand
         Brand::create([

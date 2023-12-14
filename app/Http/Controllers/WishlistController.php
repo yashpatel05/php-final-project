@@ -42,10 +42,10 @@ class WishlistController extends Controller
                 'product_id' => $request->product_id,
             ]);
 
-            return redirect()->back()->with('success', 'Product added to wishlist successfully.');
+            return redirect()->route('home')->with('success', 'Product added to wishlist successfully.');
+        } else {
+            return redirect()->back()->with('error', 'Product is already in the wishlist.');
         }
-
-        return redirect()->back()->with('error', 'Product is already in the wishlist.');
     }
 
     public function delete($id)

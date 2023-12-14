@@ -66,15 +66,15 @@
                         </div>
                         @endif
                         <div class="single-input-item">
-                            <input type="text" name="name" placeholder="User name" required />
+                            <input type="text" name="name" placeholder="User name" value="{{ old('name') }}" required />
                         </div>
 
                         <div class="single-input-item">
-                            <input type="email" name="email" placeholder="Email" required />
+                            <input type="email" name="email" placeholder="Email" value="{{ old('email') }}" required />
                         </div>
 
                         <div class="single-input-item">
-                            <input type="text" name="contact_no" placeholder="Contact-no" required />
+                            <input type="text" name="contact_no" placeholder="Contact-no" value="{{ old('contact_no') }}" required />
                         </div>
 
                         <div class="single-input-item">
@@ -82,23 +82,23 @@
                         </div>
 
                         <div class="single-input-item">
-                            <input type="text" name="street_address" placeholder="Street Address" required />
+                            <input type="text" name="street_address" placeholder="Street Address" value="{{ old('street_address') }}" required />
                         </div>
 
                         <div class="single-input-item">
-                            <input type="text" name="city" placeholder="City" required />
+                            <input type="text" name="city" placeholder="City" value="{{ old('city') }}" required />
                         </div>
 
                         <div class="single-input-item">
-                            <input type="text" name="state" placeholder="State" required />
+                            <input type="text" name="state" placeholder="State" value="{{ old('state') }}" required />
                         </div>
 
                         <div class="single-input-item">
-                            <input type="text" name="postal_code" placeholder="Postal Code" required />
+                            <input type="text" name="postal_code" placeholder="Postal Code" value="{{ old('postal_code') }}" required />
                         </div>
 
                         <div class="single-input-item">
-                            <input type="text" name="country" placeholder="Country" required />
+                            <input type="text" name="country" placeholder="Country" value="{{ old('country') }}" required />
                         </div>
 
                         <div class="single-input-item">
