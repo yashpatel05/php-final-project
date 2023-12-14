@@ -16,6 +16,12 @@
 1. Set up a MySQL database and import database file **"the_shoe_company.sql"**.
 2. Clone this repository to your web server directory.
 3. Configure the database connection details in **.env** file.
+4. **Admin Access :**
+   **Username :-** yash@gmail.com
+   **Password :-** yash1234
+5. **User Access :**
+   **Username :-** pyash7224@gmail.com
+   **Password :-** akshay1234
    
 ## Learning Curve
 - Familiarity with Laravel framework basics.
@@ -53,7 +59,7 @@
    
    ![image](https://github.com/2023-Fall-ITE-5330-0NA/group-project-team-404/assets/43314539/e418e724-7737-4dc0-b45e-aadea5734b22)
 
-   ![image](https://github.com/2023-Fall-ITE-5330-0NA/group-project-team-404/assets/43314539/4725c852-c08a-48b1-884c-e4aece2634d9)
+   ![image](https://github.com/2023-Fall-ITE-5330-0NA/final-project-repo-team-404/assets/43314539/64d42615-2bce-49a6-86b0-2a7adb979d36)
 
    **If User:**
 
@@ -177,15 +183,25 @@
 
     ![image](https://github.com/2023-Fall-ITE-5330-0NA/final-project-repo-team-404/assets/43314539/c734f826-f866-497e-bf79-e5569fa0eeec)
 
+    **Send a message in response to feedback**
+
+    ![image](https://github.com/2023-Fall-ITE-5330-0NA/final-project-repo-team-404/assets/43314539/f5b994ee-009d-4126-ac62-d3898ceacdfe)
+
+    ![image](https://github.com/2023-Fall-ITE-5330-0NA/final-project-repo-team-404/assets/43314539/c51f28f8-2f18-43d1-825a-e988a9cf9fa6)
+
+    ![image](https://github.com/2023-Fall-ITE-5330-0NA/final-project-repo-team-404/assets/43314539/22713039-8a82-42e9-8781-cf03fddf62c5)
+
 19. Admin - Contacts
 
     ![image](https://github.com/2023-Fall-ITE-5330-0NA/final-project-repo-team-404/assets/43314539/c56f9250-d3d6-49f5-98f6-bb7ca1fb173c)
 
-    **When Problem Solved**
+    **When Problem Solved - Admin can send the message via mail**
 
-    ![image](https://github.com/2023-Fall-ITE-5330-0NA/final-project-repo-team-404/assets/43314539/1198e270-a6ef-4844-a417-6d4782d17219)
+    ![image](https://github.com/2023-Fall-ITE-5330-0NA/final-project-repo-team-404/assets/43314539/54a74bc4-3841-412e-8f6a-26dba2fbfe01)
 
-    ![image](https://github.com/2023-Fall-ITE-5330-0NA/final-project-repo-team-404/assets/43314539/6675901d-f0d9-4699-a0f2-3e697fe0a972)
+    ![image](https://github.com/2023-Fall-ITE-5330-0NA/final-project-repo-team-404/assets/43314539/901b6ec6-d1c1-4cf6-99dc-78747848e0a3)
+
+    ![image](https://github.com/2023-Fall-ITE-5330-0NA/final-project-repo-team-404/assets/43314539/3c0d4c98-1389-4440-b05f-5e2cd2251fa0)
 
 20. User - Add to cart
 
@@ -216,3 +232,17 @@
 22. User - Confirmation Mail
 
     ![image](https://github.com/2023-Fall-ITE-5330-0NA/final-project-repo-team-404/assets/43314539/5aaf5a62-7997-418a-9c80-bb8b9ce996b1)
+
+23. Add the item To Wishlist
+
+    ![image](https://github.com/2023-Fall-ITE-5330-0NA/final-project-repo-team-404/assets/43314539/efdc94d1-edde-4a7c-96af-1f2215545082)
+
+    ![image](https://github.com/2023-Fall-ITE-5330-0NA/final-project-repo-team-404/assets/43314539/9e8fe661-2ba8-4b70-a1a7-fe3397458b4d)
+
+    **Delete the product from the wishlist**
+
+    ![image](https://github.com/2023-Fall-ITE-5330-0NA/final-project-repo-team-404/assets/43314539/bc8a193c-2b48-4c71-bed3-cc4fe8b82f3a)
+
+    ![image](https://github.com/2023-Fall-ITE-5330-0NA/final-project-repo-team-404/assets/43314539/ad510639-cd2c-486e-bb41-3aaa81c385fd)
+
+    ![image](https://github.com/2023-Fall-ITE-5330-0NA/final-project-repo-team-404/assets/43314539/5ad2480e-8a6d-4271-8ec3-4b9737c453ad)
